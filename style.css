@@ -1,0 +1,251 @@
+/* إعدادات عامة */
+body {
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  background: black;
+  color: #fff;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 10px;
+}
+
+
+.navbar {
+    width:100%;
+    margin: auto;
+  background-color: black !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  color: red !important;
+}
+
+.nav-link {
+  color: gray ;
+  transition: 0.3s;
+ 
+}
+.nav-link:hover {
+  color: red !important;
+}
+
+.container {
+  width:90%;
+  max-width: 1100px;
+  margin: auto;
+  background: black;
+}
+
+
+/* هيرو */
+.img-ehab {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #e50914;
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
+            
+}
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.hero h2 {
+  font-size: 40px;
+  color: red;
+}
+.hero p {
+  font-size: 25px;
+  margin: 15px 0;
+
+}
+.hero .btn {
+  background: #e50914;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.hero .btn:hover {
+  background: #b00610;
+}
+
+/* الأقسام */
+section {
+  padding: 60px 0;
+}
+section h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: red;
+}
+
+/* المنتجات ومعرض الأعمال */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.card h4 {
+  margin: 15px 0 10px;
+  color: red;
+  text-align: center;
+  
+}
+.card p {
+  font-size: 14px;
+}
+.card .btn {
+  background: #e50914;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.card .btn:hover {
+  background: #b00610;
+}
+.img-box {
+  width: 300px;
+  height: 250px;
+  background: gray;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  margin: auto;
+}
+h4 {
+    
+    margin: auto;
+}
+
+section#contact {
+    
+  max-width: 800px;
+  margin: auto;
+  background: black;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+section#contact h2 {
+  color: red;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.contactd {
+    background: black;
+    
+}
+ul.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.contact-info li {
+  margin: 12px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+ul.contact-info li i {
+  color: red;
+  margin-left: 10px;
+  font-size: 20px;
+  min-width: 25px;
+  text-align: center;
+}
+
+ul.contact-info li a {
+  color: red;
+  text-decoration: none;
+}
+
+ul.contact-info li a:hover {
+  text-decoration: underline;
+}
+
+/* زر واتساب عائم */
+.whatsapp-float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #20b857;
+}
+
+/* تواصل */
+.contact a {
+  color: #e50914;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* فوتر */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: black;
+  border-top: 1px solid #222;
+}
+
+/* ====== أنيميشن ====== */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.animate.right {
+  transform: translateX(40px);
+}
+.animate.left {
+  transform: translateX(-40px);
+  padding: 30px;
+ 
+}
+.delay-1 { transition-delay: 0.3s; }
+.delay-2 { transition-delay: 0.6s; }
+.delay-3 { transition-delay: 0.9s; }
