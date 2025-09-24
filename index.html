@@ -201,29 +201,34 @@
   </div>
 
   <!-- نموذج التواصل -->
-  <form class="animate up delay-2" style="max-width:600px; margin:auto; text-align:right;">
-    <label for="name">الاسم</label><br>
-    <input type="text" id="name" name="name" required 
-           style="width:100%; padding:10px; margin:8px 0; border-radius:5px; border:1px solid #444;"><br>
+<form id="contactForm" action="https://formspree.io/f/xeorqbrl" method="POST" style="max-width:600px; margin:auto; text-align:right;">
+  <label for="name">الاسم</label><br>
+  <input type="text" id="name" name="name" required 
+         style="width:100%; padding:10px; margin:8px 0; border-radius:5px; border:1px solid #444;"><br>
 
-    <label for="email">البريد الإلكتروني</label><br>
-    <input type="email" id="email" name="email" required 
-           style="width:100%; padding:10px; margin:8px 0; border-radius:5px; border:1px solid #444;"><br>
+  <label for="email">البريد الإلكتروني</label><br>
+  <input type="email" id="email" name="email" required 
+         style="width:100%; padding:10px; margin:8px 0; border-radius:5px; border:1px solid #444;"><br>
 
-    <label for="message">رسالتك</label><br>
-    <textarea id="message" name="message" rows="5" required
-              style="width:100%; padding:10px; margin:8px 0; border-radius:5px; border:1px solid #444;"></textarea><br>
+  <label for="message">رسالتك</label><br>
+  <textarea id="message" name="message" rows="5" required
+            style="width:100%; padding:10px; margin:8px 0; border-radius:5px; border:1px solid #444;"></textarea><br>
 
-    <button type="submit" 
-            style="padding:12px 25px; background:#e50914; color:#fff; border:none; border-radius:5px; cursor:pointer;">
-      إرسال
-    </button>
-  </form>
+  <button type="submit" 
+          style="padding:12px 25px; background:#e50914; color:#fff; border:none; border-radius:5px; cursor:pointer;">
+    إرسال
+  </button>
+
+  <!-- الرسالة التي ستظهر بعد الإرسال -->
+  <p id="formMessage" style="color: white; display:none; margin-top:15px; font-weight:bold;">
+    ✅ تم إرسال رسالتك بنجاح، شكراً لتواصلك!
+  </p>
+</form>
+
 </section>
 
   <!-- روابط التواصل -->
-  <a href="https://www.instagram.com/innovationmindsettools" class="animate up delay-2">إنستغرام</a>
-  <a href="https://www.linkedin.com/in/ehab-alsamet1" class="animate up delay-3">لينكدإن</a>
+  
   
   <!-- الفوتر -->
   <footer>
