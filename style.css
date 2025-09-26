@@ -69,8 +69,9 @@ body {
 .hero .btn {
     background: #e50914;
     color: #fff;
-    padding: 12px 25px;
-    border-radius: 5px;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
     text-decoration: none;
 }
 .hero .btn:hover {
@@ -112,8 +113,8 @@ section h3 {
 .card .btn {
     background: #e50914;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 8px 20px;
+    border-radius: 20px;
     text-decoration: none;
 }
 .card .btn:hover {
@@ -218,7 +219,29 @@ ul.contact-info li a:hover {
 .contact a:hover {
     text-decoration: underline;
 }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
 
+.social-icons a {
+  font-size: 24px;
+  color: #fff;            /* اللون الأساسي للأيقونات */
+  background: red;    /* خلفية الزر */
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;     /* يجعلها دائرية */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background: #b02a6d;    /* لون مختلف عند التمرير */
+}
 /* فوتر */
 .footer {
     text-align: center;
