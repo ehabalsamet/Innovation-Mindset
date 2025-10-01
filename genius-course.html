@@ -178,37 +178,54 @@
     <div class="container">
       <h3>قيمة الكورس : 2900$</h3>
       <p>إذا كنت مستعدًا لتبدأ رحلتك مع نظام صناعة العقول العبقرية، فهذا هو المكان الصحيح.</p>
-      <a href="#contactForm" class="btn-primary">✅ نعم، أريد أن أصبح عبقريًا</a>
+      <a href="#contactForm" class="btn-primary">
+نعم، أريد أن أصبح عبقريًا</a>
     </div>
   </section>
 
 <!-- نموذج التواصل -->
 <section>
     <h3>للتسجيل  يرجى التواصل معنا من هنا </h3>
-    <form class="animate up" id="contactForm" action="https://formspree.io/f/xeorqbrl" method="POST" style="max-width:600px; margin:auto; text-align:right;">
+    
+    <form class="animate up" id="contactForm" action="https://formspree.io/f/xeorqbrl" method="POST">
     <label for="name">الاسم</label><br>
-    <input type="text" id="name" name="name" required
-    style="width:100%; padding:10px; margin:8px 0; border-radius:5px; border:1px solid #444;"><br>
+    <input type="text" id="name" name="name" required><br>
 
     <label for="email">البريد الإلكتروني</label><br>
-    <input type="email" id="email" name="email" required
-    style="width:100%; padding:10px; margin:8px 0; border-radius:5px; border:1px solid #444;"><br>
+    <input type="email" id="email" name="email" required><br>
 
     <label for="message">رسالتك</label><br>
     <textarea id="message" name="message" rows="5" required
-        style="width:100%; padding:10px; margin:8px 0; border-radius:5px; border:1px solid #444;"></textarea><br>
+        ></textarea><br>
 
-    <button type="submit"
-        style="padding:5px 25px; background:#e50914; color:#fff; border:none; border-radius:20px; cursor:pointer;">
+    <button type="submit">
         إرسال
     </button>
 
-    <!-- الرسالة التي ستظهر بعد الإرسال -->
-    <p id="formMessage" style="color: white; display:none; margin-top:15px; font-weight:bold;">
-        ✅ تم إرسال رسالتك بنجاح، شكراً لتواصلك!
-    </p>
+
+
+    
 </form>
 </section>
+
+    
+<!-- مودال Bootstrap -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+
+      <!-- زر إغلاق (X) -->
+      <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+
+      <h5 id="formModalTitle"></h5>
+      <p id="formModalMsg"></p>
+      
+     
+      
+    </div>
+  </div>
+</div>
+
 
 
 <!-- روابط التواصل -->
