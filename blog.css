@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: #333;
+    padding: 10px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav #toggle-theme {
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+h1,h2,h3 {
+    color: red;
+}
+
+section {
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+}
+#home img {
+    margin: 0;
+    width: 100%;
+}
+#home p {
+    margin: auto;
+    width: 90%;
+}
+.profile {
+    width: 30%;
+    border-radius: 50%;
+    margin: 10px;
+}
+#about {
+    width: 90%;
+}
+#posts {
+    width: 90%;
+    padding: 20px;
+}
+
+/* المقالات */
+#posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.post {
+    margin: 20px;
+    border: 2px solid red;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.post:hover {
+    
+    transform: scale(1.1);
+}
+
+#contact {
+    width: 90%;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid red;
+    color:red;
+}
+
+/* النموذج */
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 2px solid red;
+    
+}
+
+input, textarea {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit {
+    background: red;
+    color: white;
+    border-radius: 10px;
+}
+
+/* الحاوية العامة للـ Modal */
+#modal {
+    display: none;
+    /* مخفي افتراضي */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* هنا ممكن نتركه auto، لكن الأهم هو المحتوى */
+    background-color: rgba(0,0,0,0.6);
+    /* خلفية شفافة */
+}
+
+
+/* محتوى الـ Modal */
+#modal-content {
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-height: 70vh;
+    /* ارتفاع محدود */
+    overflow-y: auto;
+    /* تفعيل التمرير */
+    border-radius: 10px;
+
+}
+
+
+.modal-content {
+    background: white;
+    color: black;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+#close-modal {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* الوضع الداكن */
+body.dark {
+    background: #222;
+    color: #eee;
+}
+
+body.dark header {
+    background: #111;
+}
+
+body.dark .post {
+    background: #333;
+    border-color: #555;
+}
+
+/* تأثير الانزلاق */
+.in-fade {
+    opacity: 1;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.in-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+#add-post {
+    width: 90%;
+    padding: 20px;
+}
+.social-icon {
+    width:100%;
+    align-items: center;
+    padding: 30px;
+    margin: auto;
+    
+}
+
+/* الفوتر */
+.blogger-footer {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+
+}
