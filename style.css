@@ -56,13 +56,14 @@ body {
 
 
 .hero h1 {
+    font-family: 'El Messiri', sans-serif;
     font-size: 40px;
     color: red;
     font-weight: bold;
 }
 .hero p {
     font-size: 25px;
-    margin: 15px 0;
+    margin: 20px;
 
 }
 .hero .btn {
@@ -145,12 +146,14 @@ body {
     justify-content: center;
 }
 section h3 {
+    font-family: 'El Messiri', sans-serif !important;
     margin: 20px;
     text-align: center;
     font-size: 28px;
     margin-bottom: 30px;
     color: red;
     font-weight: bold;
+
 }
 
 /* المنتجات ومعرض الأعمال */
@@ -196,13 +199,8 @@ section h3 {
     color: #666;
     margin: auto;
 }
-h4,h3 {
 
-    margin: auto;
-    font-weight: bold;
-}
-
-section#contact {
+section #contact {
 
     max-width: 800px;
     margin: auto;
@@ -213,11 +211,6 @@ section#contact {
 
 }
 
-section#contact h2 {
-    color: red;
-    font-size: 28px;
-    margin-bottom: 15px;
-}
 
 .contactd {
     width: 90%;
@@ -358,7 +351,7 @@ ul.contact-info li a:hover {
 
 /* تنسيقات عامة */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'El Messiri', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing:;
@@ -385,14 +378,16 @@ body {
 
 
 .course-hero h1 {
+    font-family: 'El Messiri', sans-serif;
     font-size: 40px;
     color: red;
     margin: 20px;
+    font-weight: bold;
 
 }
 
 .course-hero p {
-    font-size: 1.2rem;
+    font-size: 28px;
     color: #fff;
     margin: 20px;
 
@@ -481,7 +476,6 @@ body {
     text-align: center;
 
 }
-
 
 /* أيقونة داخل صندوق دائري */
 .icon-box {
@@ -596,18 +590,6 @@ section #formMessage {
     font-weight: bold;
 }
 
-.modal-success h5 {
-    color: #28a745;
-    /* أخضر */
-}
-.modal-error h5 {
-    color: #dc3545;
-    /* أحمر */
-}
-.modal-warning h5 {
-    color: #ffc107;
-    /* أصفر */
-}
 
 
 #formModalTitle {
