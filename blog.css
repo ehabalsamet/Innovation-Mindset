@@ -58,7 +58,7 @@ section {
 #about {
     width: 90%;
 }
-#posts {
+.posts {
     width: 90%;
     padding: 20px;
 }
@@ -82,7 +82,7 @@ section {
 
 .post:hover {
     
-    transform: scale(1.1);
+    transform: scale(1.0);
 }
 
 #contact {
@@ -186,7 +186,7 @@ body.dark .post {
 .in-fade {
     opacity: 1;
     transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition: opacity 0.4s ease, transform 0.8s ease;
 }
 
 .in-fade.visible {
@@ -197,19 +197,42 @@ body.dark .post {
     width: 90%;
     padding: 20px;
 }
-.social-icon {
-    width:100%;
-    align-items: center;
-    padding: 30px;
+.social {
+
     margin: auto;
     
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+.social-icons a {
+    font-size: 24px;
+    color: #fff;
+    /* اللون الأساسي للأيقونات */
+    background: red;
+    /* خلفية الزر */
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    /* يجعلها دائرية */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
 
 /* الفوتر */
 .blogger-footer {
     background: #000;
     color: #fff;
+    font-size: 15px;
     padding: 10px 0;
     text-align: center;
+    margin: auto;
 
 }
