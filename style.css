@@ -29,10 +29,7 @@ body {
 .nav-link:hover {
     color: red !important;
 }
-.navbar-brand img {
-    background:;
-    border-radius: 50%;
-}
+
 .container {
     width: 90%;
     max-width: 1100px;
@@ -56,14 +53,12 @@ body {
 
 
 .hero h1 {
-    font-family: 'El Messiri', sans-serif;
     font-size: 40px;
     color: red;
-    font-weight: bold;
 }
 .hero p {
     font-size: 25px;
-    margin: 20px;
+    margin: 15px 0;
 
 }
 .hero .btn {
@@ -104,10 +99,10 @@ body {
     border-radius: 10px;
     border: 2px solid red;
     text-align: justify;
-
+    
 }
 .project {
-
+    
     margin: auto;
     padding: 20px;
     border-radius: 10px;
@@ -125,7 +120,7 @@ body {
 }
 
 .arshef {
-
+    
     margin: auto;
     padding: 20px;
     border-radius: 10px;
@@ -145,41 +140,11 @@ body {
     align-content: center;
     justify-content: center;
 }
-
-.new-book .btn {
-    
-  background-color: #c30000; /* الأحمر الرسمي */
-  color: #fff; /* النص باللون الأبيض */
-  font-weight: 600;
-  padding: 8px 20px;
-  border: none;
-  border-radius: 25px; /* حواف ناعمة */
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(195, 0, 0, 0.3); /* ظل خفيف للأناقة */
-  
-}
-
-.new-book .btn:hover {
-  background-color: #a00000; /* أحمر أغمق عند المرور */
-  color: #fff;
-  transform: translateY(-3px); /* ارتفاع بسيط عند hover */
-  box-shadow: 0 6px 14px rgba(160, 0, 0, 0.4);
-}
-
-.new-book .btn:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(160, 0, 0, 0.3);
-}
 section h3 {
-    font-family: 'El Messiri', sans-serif !important;
-    margin: 20px;
     text-align: center;
     font-size: 28px;
     margin-bottom: 30px;
     color: red;
-    font-weight: bold;
-
 }
 
 /* المنتجات ومعرض الأعمال */
@@ -187,7 +152,7 @@ section h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-
+    
 }
 .card {
     background: #111;
@@ -225,18 +190,26 @@ section h3 {
     color: #666;
     margin: auto;
 }
+h4,h3 {
 
-section #contact {
+    margin: auto;
+}
+
+section#contact {
 
     max-width: 800px;
     margin: auto;
-    background: #111;
+    background:#111;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-
 }
 
+section#contact h2 {
+    color: red;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
 
 .contactd {
     width: 90%;
@@ -377,7 +350,7 @@ ul.contact-info li a:hover {
 
 /* تنسيقات عامة */
 body {
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing:;
@@ -404,18 +377,14 @@ body {
 
 
 .course-hero h1 {
-    font-family: 'El Messiri', sans-serif;
     font-size: 40px;
     color: red;
-    margin: 20px;
-    font-weight: bold;
 
 }
 
 .course-hero p {
-    font-size: 28px;
+    font-size: 1.2rem;
     color: #fff;
-    margin: 20px;
 
 }
 .course-section {
@@ -427,19 +396,15 @@ body {
     text-align: justify;
 
 
-
 }
 
 .btn-primary {
-    background: #e50914;
+    background: #e63946;
     color: #fff;
-    padding: 8px 25px;
+    padding: 8px 20px;
     text-decoration: none;
     border-radius: 20px;
     font-weight: bold;
-    align-content: center;
-    margin: 20px;
-
 
 }
 
@@ -502,6 +467,7 @@ body {
     text-align: center;
 
 }
+
 
 /* أيقونة داخل صندوق دائري */
 .icon-box {
@@ -571,64 +537,4 @@ body {
     margin-top: 1rem;
     font-size: 1.3rem;
     color: #222;
-    font-weight: bold;
 }
-
-section #contactForm {
-    width: 90%;
-    margin: auto;
-    text-align: right;
-}
-section #name {
-    width: 100%;
-    padding: 10px;
-    margin: auto;
-    border-radius: 5px;
-    border: 1px solid #444;
-}
-section #email {
-    width: 100%;
-    padding: 10px;
-    margin: auto;
-    border-radius: 5px;
-    border: 1px solid #444;
-}
-section textarea {
-    width: 100%;
-    padding: 10px;
-    margin: auto;
-    border-radius: 5px;
-    border: 1px solid #444;
-}
-section button {
-    padding: 5px 25px;
-    background: #e50914;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    margin: 10px;
-}
-section #formMessage {
-    color: white;
-    display: none;
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-
-
-#formModalTitle {
-    color: black;
-}
-#formModalMsg {
-    color: black;
-}
-
-
-
-/* لجعل خلفية المودال داكنة صلبة */
-.modal-backdrop.show {}
-
-/* لتغيير لون المودال نفسه */
-.modal-content {}
