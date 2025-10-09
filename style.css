@@ -145,6 +145,32 @@ body {
     align-content: center;
     justify-content: center;
 }
+
+.new-book .btn {
+    
+  background-color: #c30000; /* الأحمر الرسمي */
+  color: #fff; /* النص باللون الأبيض */
+  font-weight: 600;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 25px; /* حواف ناعمة */
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(195, 0, 0, 0.3); /* ظل خفيف للأناقة */
+  
+}
+
+.new-book .btn:hover {
+  background-color: #a00000; /* أحمر أغمق عند المرور */
+  color: #fff;
+  transform: translateY(-3px); /* ارتفاع بسيط عند hover */
+  box-shadow: 0 6px 14px rgba(160, 0, 0, 0.4);
+}
+
+.new-book .btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(160, 0, 0, 0.3);
+}
 section h3 {
     font-family: 'El Messiri', sans-serif !important;
     margin: 20px;
