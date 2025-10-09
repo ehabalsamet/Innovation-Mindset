@@ -1,0 +1,265 @@
+/* ===== إعدادات عامة ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'El Messiri', sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===== الهيدر ===== */
+.navbar {
+    width: 100%;
+    background-color: #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+    color: red !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: red !important;
+}
+
+/* ===== الغلاف الرئيسي ===== */
+.course-hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('hero.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.course-hero h1 {
+    font-size: 3rem;
+    color: red;
+}
+
+.course-hero p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 15px 0;
+}
+
+.btn-primary {
+    background: #e50914;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #b00610;
+}
+
+/* ===== الأقسام ===== */
+.course-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.course-section h3 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+/* ===== المراحل الخمس ===== */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #e63946, #000);
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(230,57,70,0.3);
+}
+
+.feature-box h3 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: #222;
+}
+
+/* ===== نموذج التواصل ===== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #b00610;
+}
+
+/* ===== الفوتر ===== */
+.course-footer {
+    background: #000;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.course-footer a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.course-footer a:hover {
+    color: #e50914;
+}
+
+.course-footer h5 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.course-footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.course-footer ul li {
+    margin-bottom: 10px;
+}
+
+/* ===== أيقونات التواصل ===== */
+.course-footer .fab {
+    font-size: 24px;
+    margin: 0 8px;
+    color: #fff;
+}
+
+
+.course-footer .fab:hover {
+    color: #e50914;
+}
+.course-footer p, 
+.course-footer a, 
+.course-footer li {
+    color: #ddd;
+}
+
+/* ===== FAQ ===== */
+.faq-item {
+    background: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    text-align: right;
+}
+
+/* قسم الثراء يبدأ من العقل */
+
+.mind-wealth-section {
+  background: linear-gradient(180deg, #0d0d0d 0%, #111 100%);
+  color: #fff;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.6);
+}
+
+.mind-wealth-section .icon-box {
+  width: 150px;
+  height: 150px;
+  background: rgba(229, 9, 20, 0.1);
+  border: 2px solid #e50914;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 25px;
+}
+
+.mind-wealth-section .icon-box i {
+  font-size: 70px;
+  color: #e50914;
+}
+
+.mind-wealth-section h3 {
+  font-size: 2rem;
+  color: #e50914;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.mind-wealth-section p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #eee;
+  max-width: 800px;
+  margin: 0 auto 15px;
+  text-align: justify;
+}
+/* تأثير الظهور عند التمرير */
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+section {
+  scroll-margin-top: 100px;
+}
