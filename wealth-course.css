@@ -37,7 +37,7 @@ a {
 /* ===== الغلاف الرئيسي ===== */
 .course-hero {
     height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('hero.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('hero4.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,16 +62,23 @@ a {
     border-radius: 25px;
     font-weight: bold;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .btn-primary:hover {
     background: #b00610;
+    
 }
 
 /* ===== الأقسام ===== */
 .course-section {
+    width:90%;
+    margin: auto ;
     padding: 60px 0;
     text-align: center;
+     border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.09);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .course-section h3 {
@@ -120,23 +127,38 @@ a {
     font-size: 1.3rem;
     color: #222;
 }
-
+.course-cta {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+}
 /* ===== نموذج التواصل ===== */
+
 form {
+    width:90%;
+    padding:10px;
+    margin: auto;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
 
 form input, form textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
-    margin: 8px 0;
+    margin: auto;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
 }
 
 form button {
     padding: 10px 20px;
+    margin: 20px;
     background: #e50914;
     color: #fff;
     border: none;
@@ -216,7 +238,12 @@ form button:hover {
   overflow: hidden;
   box-shadow: inset 0 0 100px rgba(0,0,0,0.6);
 }
-
+.course-hero a {
+    text-decoration: none;
+}
+.list-unstyled a {
+    text-decoration: none;
+}
 .mind-wealth-section .icon-box {
   width: 150px;
   height: 150px;

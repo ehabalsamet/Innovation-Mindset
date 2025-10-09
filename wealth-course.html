@@ -20,24 +20,31 @@
 </head>
 <body>
 
-<!-- الهيدر -->
+   <!-- الهيدر -->
 <header class="header">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container-fluid">
-<a class="navbar-brand fw-bold" href="#">Innovation Mindset Skills</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="mainNav">
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-<li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
-<li class="nav-item"><a class="nav-link" href="#">مكتبة الابتكار</a></li>
-<li class="nav-item"><a class="nav-link" href="#about">من انا</a></li>
-<li class="nav-item"><a class="nav-link" href="#contactForm">تواصل معنا</a></li>
-</ul>
-</div>
-</div>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+      <!-- زر القائمة -->
+      <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- اللوجو -->
+      <a class="navbar-brand fw-bold order-2 ms-2" href="#">innovation mindset skills        <img src="logo3.png" alt="Logo" width="45" height="40" class="me-2"></a>
+
+
+      <!-- الروابط -->
+      <div class="collapse navbar-collapse order-3" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://payhip.com/innovationmindsettools">مكتبة الابتكار</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">من انا</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contactForm">تواصل معنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
 
 <!-- الغلاف الرئيسي -->
@@ -49,8 +56,8 @@
 </div>
 </section>
 <!-- القسم الجديد: الثراء يبدأ من العقل -->
-<section class="mind-wealth-section animate up">
-<div class="container text-center">
+<section class="mind-wealth-section">
+<div class="container animate up text-center">
 <div class="icon-box">
 <i class="fa-solid fa-brain"></i>
 </div>
@@ -162,29 +169,57 @@
 </section>
 
 <!-- الدعوة للتسجيل -->
-<section class="course-cta animate up" id="cta">
+<section class="course-cta feature-box animate up" id="cta">
 <div class="container text-center">
 <h3>قيمة الكورس: 1500$</h3>
 <p>ابدأ رحلتك لبناء عقلية المستثمر الثرِيّ والمستدام.</p>
 <a href="#contactForm" class="btn-primary">✅ نعم، أريد الانضمام</a>
 </div>
 </section>
+<hr>
+<section id="form">
 
-<!-- نموذج التواصل -->
-<section class="course-section animate up">
-<div class="container" style="max-width:600px; margin:auto;">
-<h3>للتسجيل يرجى التواصل معنا</h3>
-<form id="contactForm" action="https://formspree.io/f/xeorqbrl" method="POST">
-<label for="name">الاسم</label><br>
-<input type="text" name="name" required><br>
-<label for="email">البريد الإلكتروني</label><br>
-<input type="email" name="email" required><br>
-<label for="message">رسالتك</label><br>
-<textarea name="message" rows="5" required></textarea><br>
-<button type="submit">إرسال</button>
+    
+    <form class="animate up" id="contactForm" action="https://formspree.io/f/xeorqbrl" method="POST">
+            <h3>للتسجيل  يرجى التواصل معنا   </h3>
+    <label for="name">الاسم</label><br>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">البريد الإلكتروني</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="message">رسالتك</label><br>
+    <textarea id="message" name="message" rows="5" required
+        ></textarea><br>
+
+    <button type="submit">
+        إرسال
+    </button>
+
+
+
+    
 </form>
-</div>
 </section>
+
+    
+<!-- مودال Bootstrap -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-4">
+
+      <!-- زر إغلاق (X) -->
+      <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+
+      <h5 id="formModalTitle"></h5>
+      <p id="formModalMsg"></p>
+      
+     
+      
+    </div>
+  </div>
+</div>
+
 
 <!-- الفوتر مع روابط مهمة -->
 <footer class="course-footer text-center">
@@ -204,6 +239,9 @@
 <a href="https://wa.me/+967773133134" target="_blank"><i class="fab fa-whatsapp"></i></a>
 <a href="https://instagram.com/innovationmindsettools" target="_blank"><i class="fab fa-instagram"></i></a>
 <a href="https://facebook.com/ehabalsamet" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://youtube.com/@Innovation.mindset.skills" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="https://twitter.com/alsametehab" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/in/ehab-alsamet1" target="_blank"><i class="fab fa-linkedin"></i></a>
 </div>
 
 
@@ -211,6 +249,8 @@
 <p>© 2025 Innovation Mindset Skills</p>
 </div>
 </footer>
+  <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="wealth-course.js"></script>
 
