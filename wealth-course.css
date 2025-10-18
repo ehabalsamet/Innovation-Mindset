@@ -69,6 +69,57 @@ a {
     background: #b00610;
     
 }
+.wealth-engineering-section {
+  background: linear-gradient(180deg, #fff, #f8f8f8);
+  padding: 80px 20px;
+  text-align: right;
+  color: #222;
+  line-height: 1.9;
+}
+
+.wealth-engineering-section h2 {
+  text-align: center;
+  color: #e50914;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.wealth-engineering-section .intro-text {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: justify;
+}
+
+.wealth-engineering-section h3 {
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.wealth-engineering-section ul {
+  list-style: none;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.wealth-engineering-section ul li {
+  background: #fff;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.wealth-engineering-section ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
 
 /* ===== الأقسام ===== */
 .course-section {
