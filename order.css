@@ -1,0 +1,277 @@
+body {
+  font-family: "Tajawal", sans-serif;
+  background: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* الهيدر */
+.site-header {
+  background: #111;
+  padding: 20px 0;
+  border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  margin: 20px;
+  color: #e50914;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover, .nav .cta {
+  color: #e50914;
+}
+
+/* البطل */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-cover img {
+  width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.4);
+}
+
+.badge {
+  background: #e50914;
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.lead {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.price-box {
+  margin: 20px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #777;
+  margin-left: 10px;
+}
+
+.new-price {
+  color: #e50914;
+  font-weight: bold;
+}
+
+.btn {
+    width: 80%;
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  margin: auto;
+}
+
+.btn.primary {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+  background: #e50914;
+  color: #fff;
+}
+
+.btn.outline {
+    width:90%;
+    margin: 10px auto;
+    padding: 10px;
+  border: 1px solid #e50914;
+  color: #e50914;
+}
+
+.btn.primary:hover {
+  background: #ff1a23;
+}
+
+.btn.outline:hover {
+  background: #e50914;
+  color: #fff;
+}
+
+/* المزايا */
+.features {
+  background: #0d0d0d;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.features .fa-solid {
+  color: red;
+  margin: 20px;
+}
+
+.features .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #111;
+  color: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* التسعير */
+.pricing {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.payment-icons {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+.payment-icons i {
+  margin: 0 10px;
+  color: #e50914;
+}
+
+/* الطلب */
+.preorder {
+  background: #111;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.order-form input {
+  width: 90%;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.trust {
+  color: #999;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* الفوتر */
+.site-footer {
+  background: #0a0a0a;
+  text-align: center;
+  padding: 20px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer-nav a {
+  color: #999;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: #e50914;
+}
+
+.importbook {
+}
+
+.book-section {
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  color: #fff;
+  padding: 60px 20px;
+  border-radius: 12px;
+  text-align: right;
+  direction: rtl;
+}
+
+.book-card {
+    width: 90%;
+    height: 200px;
+    margin: 20px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  color: #ccc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(229, 9, 20, 0.5);
+}
+
+.book-card h3 {
+  color: #e50914;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  line-height: 1.5;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+}

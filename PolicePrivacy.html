@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشروط والسياسات</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            font-family: "Tajawal", sans-serif;
+            padding: 50px 20px;
+        }
+
+        .policy-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .policy-container h2 {
+            color: #e50914;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .policy-card {
+            background: #1e1e1e;
+            padding: 20px 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .policy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(229, 9, 20, 0.5);
+        }
+
+        .policy-card h3 {
+            color: #e50914;
+            margin-bottom: 10px;
+        }
+
+        .policy-card p {
+            color: #ccc;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .policy-card button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: #e50914;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .policy-card button:hover {
+            background: #ff3030;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="policy-container">
+        <h2>الشروط والسياسات</h2>
+        
+        <!-- بطاقة سياسة الخصوصية -->
+        <div class="policy-card">
+            <h3>سياسة الخصوصية</h3>
+            <p>توضح سياسة الخصوصية كيفية جمع البيانات وحمايتها واستخدامها.</p>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#privacyModal">قراءة المزيد</button>
+        </div>
+        <!-- بطاقة شروط الاستخدام -->
+        <div class="policy-card">
+            <h3>شروط الاستخدام</h3>
+            <p>توفر هذه الشروط الإرشادات اللازمة لاستخدام موقعنا وخدماتنا بشكل آمن وفعال.</p>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#termsModal">قراءة المزيد</button>
+        </div>
+
+        <!-- بطاقة سياسة الاسترجاع -->
+        <div class="policy-card">
+            <h3>سياسة الاسترجاع</h3>
+            <p>تشرح سياسة الاسترجاع الشروط والأحكام المتعلقة بإرجاع المنتجات أو طلب استرداد الأموال.</p>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#refundModal">قراءة المزيد</button>
+        </div>
+
+
+    </div>
+
+    <!-- مودال شروط الاستخدام -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="termsModalLabel">شروط الاستخدام</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>توفر هذه الشروط الإرشادات اللازمة لاستخدام موقعنا وخدماتنا بشكل آمن وفعال. يجب على المستخدم الالتزام بهذه الشروط لتجنب أي مشاكل قانونية أو قيود على الوصول.</p>
+            <p>يمكنك استخدام الموقع فقط للأغراض المصرح بها، ولا يُسمح بنسخ المحتوى أو إعادة نشره دون إذن.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- مودال سياسة الاسترجاع -->
+    <div class="modal fade" id="refundModal" tabindex="-1" aria-labelledby="refundModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="refundModalLabel">سياسة الاسترجاع</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>تشرح سياسة الاسترجاع الشروط والأحكام المتعلقة بإرجاع المنتجات أو طلب استرداد الأموال، بما يضمن حقوق العميل والشركة على حد سواء.</p>
+            <p>تتم معالجة طلبات الاسترجاع خلال فترة محددة وفق الشروط المذكورة في الموقع.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- مودال سياسة الخصوصية -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="privacyModalLabel">سياسة الخصوصية</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>توضح سياسة الخصوصية كيفية جمع البيانات وحمايتها واستخدامها، لضمان سرية المعلومات الشخصية للمستخدمين والالتزام بالقوانين المحلية والدولية.</p>
+            <p>نلتزم بعدم مشاركة البيانات مع أي جهة خارجية دون موافقة المستخدم، ونستخدمها لتحسين خدماتنا وتجربة المستخدم.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
